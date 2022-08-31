@@ -1400,39 +1400,28 @@ button {
 
 /* Animation of card */
 .cards__text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   position: absolute;
-  top: 0;
-  left: 0;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5555555556;
+  min-height: 100%;
+  color: var(--font-color-on-dark);
+  background-color: rgba(33, 150, 243, 0.9);
   width: 100%;
-  height: 100%;
-  padding: 24px;
-  font-size: 15px;
-  /* даємо тексту скролл, якщо буде переповнення контенту */
-
-  line-height: 1.56;
-  color: var(--simple-white);
-  opacity: 0;
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
-  -webkit-transition: opacity var(--transition), -webkit-transform var(--transition);
-  transition: opacity var(--transition), -webkit-transform var(--transition);
-  transition: transform var(--transition), opacity var(--transition);
+  top: 0;
+  padding: 77px 24px;
+  overflow: auto;
+  transform: translate(0, 101%);
   transition: transform var(--transition), opacity var(--transition), -webkit-transform var(--transition);
-  
+  transform: translate(0, 0);
 }
-@media screen and (min-width: 480px) {
-  .cards__text {
-    width: 480px;
-    font-size: 15px;
+@media screen and (min-width: 1200px) {
+  .projectList__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .projectList__overlay {
+    padding: 63px 24px;
+    min-width: 370px;
   }
 }
 

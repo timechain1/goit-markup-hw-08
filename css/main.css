@@ -1433,16 +1433,6 @@ button {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
-  .cards__text {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .cards__text {
-    width: 1200px;
-  }
-}
 
 .cards__info-box {
   padding: 20px 24px;

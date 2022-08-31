@@ -1415,6 +1415,7 @@ button {
   width: 100%;
   height: 100%;
   padding: 24px;
+  font-size: 18px;
   /* даємо тексту скролл, якщо буде переповнення контенту */
   line-height: 1.56;
   color: var(--simple-white);
@@ -1427,12 +1428,7 @@ button {
   transition: transform var(--transition), opacity var(--transition), -webkit-transform var(--transition);
  
 }
-@media screen and (max-width: 480px) {
-  .cards__text {
-    width: 480px;
-    font-size: 15px;
-  }
-}
+
 
 .cards__info-box {
   padding: 20px 24px;
